@@ -1,0 +1,133 @@
+$text-on-dark-background: #ffffff;
+$brand-color: #2196f3;
+$brand-article-color: #212121;
+$item-gray: #757575;
+
+$transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // min-width: 320px;
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  background-color: $text-on-dark-background;
+}
+.menu-container {
+  &__close {
+    max-height: 40px;
+    max-width: 40px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    // position: relative;
+    &:hover > :first-child,
+    &:focus > :first-child {
+      fill: $brand-color;
+    }
+    &--position {
+      display: flex;
+      justify-content: end;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &--links {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      color: $brand-article-color;
+      &:hover,
+      &:focus {
+        color: $brand-color;
+      }
+    }
+  }
+  &__contact {
+    list-style: none;
+    padding-top: 32px;
+    &--mail {
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      color: $brand-color;
+      transition: $transition-brand;
+    }
+    &--tel {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: $item-gray;
+      text-decoration: none;
+    }
+  }
+  &__social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    box-sizing: border-box;
+    padding-top: 64px;
+    & > :not(:first-child) {
+      padding-left: 10px;
+    }
+    & > :not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid #21212133;
+    }
+    &--text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: $brand-color;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.interval {
+  position: fixed;
+  bottom: 48px;
+}
+
+.mobile-container.is-open {
+  transform: translateX(0);
+}
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    transition: $transition-brand;
+    fill: $brand-article-color;
+  }
+}

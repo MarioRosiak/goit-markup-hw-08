@@ -1,0 +1,382 @@
+$text-on-dark-background: #ffffff;
+$background-button-color: #f5f4fa;
+$extraocular-white: #afb1b8;
+$brand-color: #2196f3;
+$brand-article-color: #212121;
+$item-gray: #757575;
+$site-fonts-roboto: "Roboto", sans-serif;
+$transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$shadow-background: linear-gradient(
+  0deg,
+  rgba(44, 44, 44, 0.7) 0%,
+  rgba(44, 44, 44, 0.2) 35%,
+  rgba(44, 44, 44, 0.2) 65%,
+  rgba(44, 44, 44, 0.2) 65%,
+  rgba(44, 44, 44, 0.7) 100%
+);
+
+// media to mobile
+.background-heading {
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: $shadow-background, url("../images/mobile@1x.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: $shadow-background, url("../images/mobile@2x.jpg");
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: $shadow-background, url("../images/mobile@3x.jpg");
+  }
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: $site-fonts-roboto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 365px;
+    height: auto;
+    color: $text-on-dark-background;
+    margin-bottom: 30px;
+    &--button {
+      background: $brand-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      width: 200px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.06em;
+      color: $text-on-dark-background;
+    }
+  }
+}
+
+// media to tablet
+@media screen and (min-width: 768px) {
+  .background-heading {
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: $shadow-background, url("../images/tablet@1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $shadow-background, url("../images/tablet@2x.jpg");
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: $shadow-background, url("../images/tablet@3x.jpg");
+    }
+  }
+}
+
+// media to desktop
+@media screen and (min-width: 1200px) {
+  .background-heading {
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: $shadow-background, url("../images/desktop@1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: $shadow-background, url("../images/desktop@2x.jpg");
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: $shadow-background, url("../images/desktop@3x.jpg");
+    }
+    height: 600px;
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+      height: 120px;
+    }
+  }
+}
+
+// media to mobile
+.lorem-section {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  &__icon {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 450px;
+    &--box {
+      box-sizing: border-box;
+      max-width: 450px;
+      height: 120px;
+      background: $background-button-color;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__item {
+    &--heading-text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $brand-article-color;
+    }
+    &--text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+    }
+  }
+}
+// media to tablet
+@media screen and (min-width: 768px) {
+  .lorem-section {
+    gap: 30px;
+    &__icon {
+      max-width: 354px;
+    }
+    &--box {
+      max-width: 354px;
+    }
+  }
+}
+// media to desktop
+@media screen and (min-width: 1200px) {
+  .lorem-section {
+    margin-top: 94px;
+    gap: 0px 30px;
+    &__icon {
+      max-width: 270px;
+      &--box {
+        max-width: 270px;
+      }
+    }
+  }
+}
+// media to tablet and mobile
+.what-we-do {
+  display: none;
+  &__img {
+    display: none;
+  }
+}
+
+// media to desktop
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $brand-article-color;
+    &__img {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      & > :nth-child(n + 2) {
+        margin-left: 30px;
+      }
+      &--position {
+        position: relative;
+      }
+      &--text {
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 100%;
+        padding: 27px 0px;
+        font-family: $site-fonts-roboto;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $text-on-dark-background;
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+.background-our-team {
+  background: $background-button-color;
+  max-width: 100vw;
+}
+
+// media to mobile
+.our-team {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $brand-article-color;
+  &__img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    &--size {
+      width: 450px;
+      height: auto;
+    }
+  }
+}
+
+// media to tablet
+@media screen and (min-width: 768px) {
+  .our-team {
+    &__img {
+      flex-direction: row;
+      &--size {
+        width: 354px;
+        height: auto;
+      }
+    }
+  }
+}
+// media to desktop
+@media screen and (min-width: 1200px) {
+  .our-team {
+    font-size: 36px;
+    &__img {
+      flex-wrap: nowrap;
+      margin-top: 50px;
+      &--size {
+        width: 250;
+        height: auto;
+      }
+    }
+  }
+}
+.under-our-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  &__name {
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 30px 0px 10px 0px;
+    color: $brand-article-color;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.icon-social {
+  border: solid 0px;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-color: none;
+  fill: $item-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  transition: $transition-brand;
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    fill: $text-on-dark-background;
+    cursor: pointer;
+  }
+}
+
+// media to mobile
+.customers {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $brand-article-color;
+  margin-bottom: 30px;
+  &__item {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    &--logo {
+      box-sizing: border-box;
+      fill: $extraocular-white;
+      max-width: 210px;
+      height: 92px;
+      border: 1px solid $extraocular-white;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: $transition-brand;
+      &:hover,
+      &:focus {
+        fill: $brand-color;
+        border: 1px solid $brand-color;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// media to tablet
+@media screen and (min-width: 768px) {
+  .customers {
+    &__item {
+      &--logo {
+        width: 226px;
+      }
+    }
+  }
+}
+// media to desktop
+@media screen and (min-width: 1200px) {
+  .customers {
+    font-size: 36px;
+    &__item {
+      flex-wrap: nowrap;
+      &--logo {
+        width: 170px;
+      }
+    }
+  }
+}

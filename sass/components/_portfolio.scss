@@ -1,0 +1,115 @@
+$brand-article-color: #212121;
+$text-on-dark-background: #ffffff;
+$background-roll-up: rgba(33, 150, 243, 0.9);
+$transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$site-fonts-roboto: "Roboto", sans-serif;
+
+// media to mobile
+.list-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+}
+// media to tablet and desktop
+@media screen and (min-width: 768px) {
+  .list-button {
+    justify-content: center;
+  }
+}
+
+// media to mobile
+.img-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  &__shadow:hover,
+  &__shadow:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &__size {
+    min-width: 330px;
+    // box-sizing: border-box;
+    width: 100vw;
+  }
+  &__text {
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001f;
+    padding-bottom: 20px;
+    max-width: 450px;
+    &:hover .roll-up__text {
+      position: absolute;
+      transform: translate(0%, 0%);
+    }
+    &--padding {
+      padding-left: 24px;
+    }
+    &--heading {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      color: $brand-article-color;
+    }
+  }
+}
+
+// media to tablet
+@media screen and (min-width: 768px) {
+  .img-section {
+    margin-top: 30px;
+    &__size {
+      // max-width: 354px;
+      width: 100vw;
+    }
+    &__text {
+      max-width: 354px;
+    }
+  }
+}
+// media to daesktop
+@media screen and (min-width: 1200px) {
+  .img-section {
+    margin-top: 50px;
+    &__size {
+      max-width: 370px;
+    }
+    &__text {
+      max-width: 370px;
+    }
+  }
+}
+
+.roll-up {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 85px; /*nie wiem czemu taka wartość*/
+  max-width: 100%;
+  /* height: calc(100% - 85px); */
+  overflow: hidden;
+  &__text {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100%;
+    padding: 49px 24px;
+    font-family: $site-fonts-roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $text-on-dark-background;
+    background-color: $background-roll-up;
+    transition: $transition-brand;
+    transform: translate(0%, 100%);
+  }
+}
