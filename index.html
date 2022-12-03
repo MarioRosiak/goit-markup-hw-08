@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="preconnect"
-      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="css/main.css" rel="stylesheet" />
+
+    <link href="css/main.min.css" rel="stylesheet" />
     <title>Studio</title>
   </head>
   <body>
@@ -39,7 +40,7 @@
               href="portfolio.html"
               >Portfolio</a
             >
-            <a class="links header-flex__nav-element--links-web" href="Kontakt"
+            <a class="links header-flex__nav-element--links-web" href="#"
               >Kontakt</a
             >
           </nav>
@@ -447,7 +448,7 @@
                 >
                   Zapisz się
                   <svg viewBox="0 0 30 30" height="24px" width="24px">
-                    <use href="images\icons.svg#icon-icon-send"></use>
+                    <use href="images\icons.svg#icon-send"></use>
                   </svg>
                 </button>
               </label>
@@ -484,7 +485,7 @@
                   height="30px"
                   width="30px"
                 >
-                  <use href="images\icons.svg#icon-person-icon"></use>
+                  <use href="images\icons.svg#icon-person"></use>
                 </svg>
                 <input
                   class="input-focus modal__input"
@@ -522,7 +523,7 @@
                   height="30px"
                   width="30px"
                 >
-                  <use href="images\icons.svg#icon-email-icon"></use>
+                  <use href="images\icons.svg#icon-email"></use>
                 </svg>
                 <input
                   class="input-focus modal__input"
@@ -620,6 +621,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile_menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

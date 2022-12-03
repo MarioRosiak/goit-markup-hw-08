@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="preconnect"
-      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
           <!-- <nav> -->
           <nav class="header-flex__nav-element">
             <a
-              class="links header-flex__nav-element--links-web logo"
+              class="header-flex__nav-element--links-web logo"
               href="index.html"
             >
               <span> <span class="web-blue"> Web</span>Studio </span>
@@ -39,7 +39,7 @@
               href="portfolio.html"
               >Portfolio</a
             >
-            <a class="links header-flex__nav-element--links-web" href="Kontakt"
+            <a class="links header-flex__nav-element--links-web" href="#"
               >Kontakt</a
             >
           </nav>
@@ -364,7 +364,7 @@
         <ul class="not-dot footer">
           <li class="footer__first-item">
             <h4>
-              <a class="links logo logo--footer" href="index.html">
+              <a class="logo logo--footer" href="index.html">
                 <span class="web-blue">Web</span>Studio</a
               >
             </h4>
@@ -430,7 +430,7 @@
                 >
                   Zapisz się
                   <svg viewBox="0 0 30 30" height="24px" width="24px">
-                    <use href="images\icons.svg#icon-icon-send"></use>
+                    <use href="images\icons.svg#icon-send"></use>
                   </svg>
                 </button>
               </label>
@@ -487,6 +487,7 @@
         </div>
       </div>
     </div>
-    <script src="js/mobile_menu.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
