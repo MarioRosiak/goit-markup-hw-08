@@ -1,0 +1,41 @@
+$--White: #ffffff;
+
+$site-fonts-roboto: "Roboto", sans-serif;
+
+$transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+body {
+    margin: 0;
+    font-family: "Roboto" , sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-weight: 400;
+    font-size: 16px;
+    background: var(--Ligth-Grey);
+    
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a [href],
+  .btn {
+    cursor: pointer;
+    transition: $transition-brand;
+  }
+  
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  h4 {
+    color: $--White;
+    font-family: $site-fonts-roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 14px;
+  }

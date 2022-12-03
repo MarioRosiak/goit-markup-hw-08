@@ -1,0 +1,75 @@
+$--Light-Blue: #2196f3;
+$--Withe-Grey: #f5f4fa;
+$--White: #ffffff;
+
+$--PBox-1: rgba(0, 0, 0, 0.1);
+$--PBox-2: rgba(0, 0, 0, 0.08);
+$--PBox-3: rgba(0, 0, 0, 0.12);
+$--Shadow-Red-Black: rgba(0, 0, 0, 0.15);
+
+$transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$--Shadow-Red-Black: rgba(0, 0, 0, 0.15);
+
+.btn-services {
+    background-color: $--Light-Blue;
+    box-shadow: 0px 4px 4px $--Shadow-Red-Black;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+  }
+  .btn-services:hover {
+    background-color: #1187e8e4;
+    transition:$transition-brand;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .button-newsletter {
+    margin-left: 12px;
+    position: absolute;
+    background-color: $--Light-Blue;
+    box-shadow: 0px 4px 4px $--Shadow-Red-Black;
+    border-radius: 4px;
+    fill: $--White;
+    color: $--White;
+    cursor: pointer;
+    transition:$transition-brand;
+  }
+  .button-second {
+    background: #2196f3;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px $--Shadow-Red-Black;
+    border: 0;
+    border-radius: 4px;
+    color: $--White;
+    cursor: pointer;
+  }
+  .button-second:hover {
+    transition: $transition-brand;
+    background-color: rgba(17, 135, 232, 0.95);
+  }
+  
+  .btn {
+    width: 121px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    background-color: $--Withe-Grey;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px $--PBox-1 , 0px 1px 2px $--PBox-2,
+      0px 2px 2px $--PBox-3;
+    border-radius: 4px;
+    border: 0px;
+    margin: 0px 4px;
+  }
+  .btn:hover {
+    color: white;
+    background-color: $--Light-Blue;
+  }
