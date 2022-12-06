@@ -1005,34 +1005,40 @@ img {
   margin: auto;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px)
+ {
   .modal {
     height: 581px;
     max-width: 528px;
     min-width: 330px;
     width: 100vw;
-  }
-  .modal__label:hover, .modal__label:focus {
-    color: #757575;
-  }
-  .modal__input {
-    width: 448px;
-  }
-  .modal__textarea {
-    width: 448px;
-  }
-  .modal__heading {
-    max-width: 448px;
+    &__label {
+      &:hover,
+      &:focus {
+        color: $item-gray;
+      }
+    }
+    &__input {
+      width: 448px;
+    }
+    &__textarea {
+      width: 448px;
+    }
+    &__heading {
+      max-width: 448px;
+    }
   }
 }
-.input-focus:hover, .input-focus:focus {
-  fill: #2196f3;
-  border-color: #2196f3;
-}
-.input-focus:hover > :nth-child(n), .input-focus:focus > :nth-child(n) {
-  fill: #2196f3;
-}
-
+.input-focus {
+  &:hover,
+  &:focus {
+    fill: $brand-color;
+    border-color: $brand-color;
+    & > :nth-child(n) {
+      fill: $brand-color;
+    }
+  }
+} */
 .check-off {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1104,7 +1110,7 @@ input:not(:checked) + .check > svg {
   margin-left: 8px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .check-text {
     font-size: 14px;
   }

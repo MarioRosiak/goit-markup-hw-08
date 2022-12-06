@@ -64,7 +64,6 @@ $site-fonts-roboto: "Roboto", sans-serif;
   }
   &__input {
     box-sizing: border-box;
-    // width: 370px;
     max-width: 448px;
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -114,7 +113,8 @@ $site-fonts-roboto: "Roboto", sans-serif;
 }
 
 // media to desktop
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px)
+ {
   .modal {
     height: 581px;
     max-width: 528px;
@@ -146,7 +146,7 @@ $site-fonts-roboto: "Roboto", sans-serif;
       fill: $brand-color;
     }
   }
-}
+} */
 .check-off {
   appearance: none;
 }
@@ -204,7 +204,7 @@ input:not(:checked) + .check > svg {
 }
 
 // media to desktop
-@media screen and (min-width: 1200px)( max-width: 1600px) {
+@media screen and (min-width: 1200px) and ( max-width: 1600px) {
   .check-text {
     font-size: 14px;
   }
