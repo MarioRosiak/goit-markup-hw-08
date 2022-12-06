@@ -204,7 +204,7 @@ input:not(:checked) + .check > svg {
 }
 
 // media to desktop
-@media screen and (min-width: 1200px max-width: 1600px) {
+@media screen and (min-width: 1200px)( max-width: 1600px) {
   .check-text {
     font-size: 14px;
   }

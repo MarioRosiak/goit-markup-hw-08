@@ -1104,7 +1104,7 @@ input:not(:checked) + .check > svg {
   margin-left: 8px;
 }
 
-@media screen and (min-width: 1200px max-width) {
+@media screen and (min-width: 1200px) {
   .check-text {
     font-size: 14px;
   }
