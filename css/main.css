@@ -1151,6 +1151,11 @@ input:not(:checked) + .check > svg {
   fill: #2196f3;
 }
 
+.team {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .mobile-container {
   position: fixed;
   top: 0;
