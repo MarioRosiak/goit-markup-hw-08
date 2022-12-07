@@ -62,11 +62,10 @@ $site-fonts-roboto: "Roboto", sans-serif;
     left: 12px;
     top: 29px; //od górenej krawedzi tekstu label
   }
-  &__svg-icon{
+  &__svg-icon {
     position: absolute;
     left: 12px;
-    top: 25px;
-    justify-items: center;
+    top: 26px;
   }
   &__input {
     box-sizing: border-box;

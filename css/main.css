@@ -955,8 +955,7 @@ img {
 .modal__svg-icon {
   position: absolute;
   left: 12px;
-  top: 25px;
-  justify-items: center;
+  top: 26px;
 }
 .modal__input {
   -webkit-box-sizing: border-box;
