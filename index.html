@@ -477,7 +477,12 @@
             <li>
               <label class="input-focus modal__label">
                 Imie
-                <svg class="modal__svg" viewBox="0 0 32 32">
+                <svg
+                  class="modal__svg-icon"
+                  viewBox="0 0 32 32"
+                  width="30"
+                  higth="30"
+                >
                   <use href="images\icons.svg#icon-person"></use>
                 </svg>
                 <input
@@ -486,12 +491,18 @@
                   name="imie"
                   required
                   pattern="^[A-Z][a-z]+$"
-                  title="Wymagana wielka litera. Zabronione symbole i spacje."
+                  placeholder="Wymagana wielka litera. Zabronione symbole i spacje."
+                  
                 />
               </label>
               <label class="input-focus modal__label">
                 Telefon
-                <svg class="modal__svg" viewBox="0 0 32 32">
+                <svg
+                  class="modal__svg-icon"
+                  viewBox="0 0 32 32"
+                  width="30"
+                  higth="30"
+                >
                   <use href="images\icons.svg#icon-phone"></use>
                 </svg>
                 <input
@@ -500,12 +511,17 @@
                   name="telefon"
                   required
                   pattern="^[1-9]{1}[0-9]{8}$"
-                  title="Podaj 9 cyfrową wartość nie zaczynającą się od 0."
+                  placeholder="Podaj 9 cyfrową wartość nie zaczynającą się od 0"
                 />
               </label>
               <label class="input-focus modal__label">
                 Email
-                <svg class="modal__svg" viewBox="0 0 32 32">
+                <svg
+                  class="modal__svg-icon"
+                  viewBox="0 0 32 32"
+                  width="30"
+                  higth="30"
+                >
                   <use href="images\icons.svg#icon-email"></use>
                 </svg>
                 <input
@@ -513,6 +529,7 @@
                   type="email"
                   name="email"
                   required
+                  placeholder="e-mail"
                 />
               </label>
               <label class="input-focus modal__label">
