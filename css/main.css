@@ -23,16 +23,15 @@ img {
   min-width: 320px;
   max-width: 480px;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 .container .section {
-  padding: 60px 0px;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 782px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -681,7 +680,6 @@ img {
     width: 170px;
   }
 }
-/* $text-on-dark-background: #ffffff; */
 .footer-background {
   background-color: #2f303a;
   max-width: 100vw;
