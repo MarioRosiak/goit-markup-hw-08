@@ -25,9 +25,8 @@ img {
   min-width: 320px;
   max-width: 480px;
   width: 100vw;
-    margin: 0 auto;
-    padding: 0 15px;
- 
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 // media to tablet
@@ -67,7 +66,6 @@ img {
 .invade {
   transition: $transition-brand;
 }
- .section {
-    padding: 60px 0px;
-    
-  }
+.section {
+  padding: 60px 0px;
+}
