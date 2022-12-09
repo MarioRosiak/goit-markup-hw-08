@@ -31,7 +31,7 @@ $site-fonts-roboto: "Roboto", sans-serif;
   height: 609px;
   max-width: 450px;
   min-width: 330px;
-  width: 100vw;
+  /* width: 100vw; */
   padding: 40px;
   background-color: $text-on-dark-background;
   border-radius: 4px;
@@ -43,7 +43,7 @@ $site-fonts-roboto: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var( $item-gray );
+    color: var($item-gray);
     transition: $transition-brand;
     &:hover,
     &:focus {
@@ -159,7 +159,7 @@ $site-fonts-roboto: "Roboto", sans-serif;
   align-items: center;
   cursor: pointer;
   position: relative;
-  &__svg {
+  &__svg-1 {
     width: 20px;
     height: 20px;
     fill: $brand-color;
@@ -239,8 +239,4 @@ input:not(:checked) + .check > svg {
   &:focus {
     fill: $brand-color;
   }
-}
-.team {
-  max-width: 1200px;
-  margin: auto ;
 }
