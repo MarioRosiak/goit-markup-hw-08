@@ -222,7 +222,7 @@ $shadow-background: linear-gradient(
 
 .background-our-team {
   background: $background-button-color;
-  max-width: 100vw;
+  /* max-width: 100vw; */
 }
 
 // media to mobile
@@ -243,7 +243,7 @@ $shadow-background: linear-gradient(
     gap: 30px;
     margin-top: 30px;
     &--size {
-      width: 100vw;
+      width: 450px;
       height: auto;
     }
   }
