@@ -64,7 +64,7 @@ img {
 
 .team {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .button {
@@ -818,7 +818,8 @@ img {
 .footer-form__submit--input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 358px;
+  min-width: 300px;
+  max-width: 358px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1158,7 +1159,7 @@ input:not(:checked) + .check > svg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 0px;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -1227,7 +1228,7 @@ input:not(:checked) + .check > svg {
   padding-top: 32px;
 }
 .menu-container__contact--mail {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -1265,7 +1266,7 @@ input:not(:checked) + .check > svg {
 }
 .menu-container__social--text {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
