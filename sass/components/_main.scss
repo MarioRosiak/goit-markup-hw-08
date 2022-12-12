@@ -119,10 +119,10 @@ $shadow-background: linear-gradient(
   &__icon {
     flex-direction: column;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     &--box {
       box-sizing: border-box;
-      max-width: 100vw;
+      max-width: 100%;
       height: 120px;
       background: $background-button-color;
       border-radius: 4px;
@@ -222,7 +222,6 @@ $shadow-background: linear-gradient(
 
 .background-our-team {
   background: $background-button-color;
-  /* max-width: 100vw; */
 }
 
 // media to mobile
