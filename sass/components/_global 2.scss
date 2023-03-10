@@ -32,8 +32,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 782px;
-    margin: 0 auto;
-    padding: 0 15px;
   }
 }
 
@@ -41,8 +39,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
   }
 }
 
@@ -70,5 +66,5 @@ img {
 }
 .team {
   max-width: 1200px;
-/*   margin: 0 auto; */
+  margin: 0 auto;
 }
